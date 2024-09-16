@@ -1,9 +1,12 @@
 return {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {},
-
-
+  -- https://github.com/lukas-reineke/indent-blankline.nvim
+  "lukas-reineke/indent-blankline.nvim",
+  event = 'VeryLazy',
+  main = "ibl",
+  opts = {
+    enabled = true,
+    indent = {
+      char = '',
+    },
+  },
 }
