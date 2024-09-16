@@ -57,3 +57,4 @@ vim.keymap.set("n", "<leader><leader>", function()  -- Source the current Neovim
 end)
 
 vim.keymap.set("n", "<leader>D", vim.lsp.buf.definition, { noremap = true, silent = true })
+--vim.keymap.set("n", "<leader>r", vim.lsp.buf.references, { noremap = true, silent = true })
