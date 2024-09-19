@@ -68,6 +68,22 @@ return {
                         }
                     }
                 end,
+
+                ["pylsp"] = function()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.pylsp.setup {
+                        capabilities = capabilities,
+                        settings = {
+                            pylsp = {
+                                plugins = {
+                                    pycodestyle = {
+                                        maxLineLength = 158,  -- Set line length to 120 characters
+                                    },
+                                },
+                            },
+                        },
+                    }
+                end,
             }
         })
 
