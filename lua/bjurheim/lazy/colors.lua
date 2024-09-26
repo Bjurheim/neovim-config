@@ -17,13 +17,27 @@ return {
         lazy = false,
         opts = {},
         config = function()
-            ColorMyPencils()
+--            ColorMyPencils()
         end
+    },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        lazy = false,
+        priority = 1000,
+        opts = {
+            flavour = "mocha", -- "latte, frappe, macchiato, mocha"
+        },
+        config = function(_, opts)
+            require('catppuccin').setup(opts)
+            vim.cmd("colorscheme catppuccin")
+        end,
     },
     {
         "ellisonleao/gruvbox.nvim",
         name = "gruvbox",
         config = function()
+--            ColorMyPencils()
             require("gruvbox").setup({
                 terminal_colors = true, -- add neovim terminal colors
                 undercurl = true,
@@ -71,12 +85,19 @@ return {
             })
         end
     },
+    {
+    "askfiy/visual_studio_code",
+    priority = 100,
+    config = function()
+--        vim.cmd([[colorscheme visual_studio_code]])
+    end,
+    },
 
     {
         "rose-pine/neovim",
         name = "rose-pine",
         config = function()
-            ColorMyPencils()
+--            ColorMyPencils()
             require('rose-pine').setup({
                 disable_background = true,
                 styles = {
