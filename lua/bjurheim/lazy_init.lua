@@ -15,3 +15,4 @@ require("lazy").setup({
     spec = "bjurheim.lazy",
     change_detection = { notify = false }
 })
+
