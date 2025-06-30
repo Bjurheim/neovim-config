@@ -58,3 +58,5 @@ end)
 
 vim.keymap.set("n", "<leader>D", vim.lsp.buf.definition, { noremap = true, silent = true })
 --vim.keymap.set("n", "<leader>r", vim.lsp.buf.references, { noremap = true, silent = true })
+
+vim.keymap.set("i", "<C-j>", "<Esc>o", { desc = "VSCode-style new line from insert mode" })
