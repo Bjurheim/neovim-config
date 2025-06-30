@@ -60,3 +60,7 @@ vim.keymap.set("n", "<leader>D", vim.lsp.buf.definition, { noremap = true, silen
 --vim.keymap.set("n", "<leader>r", vim.lsp.buf.references, { noremap = true, silent = true })
 
 vim.keymap.set("i", "<C-j>", "<Esc>o", { desc = "VSCode-style new line from insert mode" })
+-- scroll 3 lines down
+vim.keymap.set('n', '<C-j>', '3<C-E>', { noremap = true, silent = true, desc = "Scroll down 3 lines" })
+-- Scroll 3 lines up
+vim.keymap.set('n', '<C-k>', '3<C-Y>', { noremap = true, silent = true, desc = "Scroll up 3 lines" })
