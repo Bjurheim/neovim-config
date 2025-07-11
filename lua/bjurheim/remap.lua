@@ -64,3 +64,4 @@ vim.keymap.set("i", "<C-j>", "<Esc>o", { desc = "VSCode-style new line from inse
 vim.keymap.set('n', '<C-j>', '3<C-E>', { noremap = true, silent = true, desc = "Scroll down 3 lines" })
 -- Scroll 3 lines up
 vim.keymap.set('n', '<C-k>', '3<C-Y>', { noremap = true, silent = true, desc = "Scroll up 3 lines" })
+vim.keymap.set('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>')
